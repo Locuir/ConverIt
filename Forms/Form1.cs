@@ -26,5 +26,10 @@ namespace ConverIt
         {
 
         }
+
+        private void cuiTextBox1_ContentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

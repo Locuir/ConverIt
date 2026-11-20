@@ -36,14 +36,14 @@
             // 
             // cuiTextBox1
             // 
-            this.cuiTextBox1.BackgroundColor = System.Drawing.Color.White;
-            this.cuiTextBox1.Content = "";
+            this.cuiTextBox1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(177)))), ((int)(((byte)(138)))));
+            this.cuiTextBox1.Content = "contet";
             this.cuiTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.cuiTextBox1.FocusBackgroundColor = System.Drawing.Color.White;
             this.cuiTextBox1.FocusImageTint = System.Drawing.Color.White;
             this.cuiTextBox1.FocusOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(24)))), ((int)(((byte)(226)))));
             this.cuiTextBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cuiTextBox1.ForeColor = System.Drawing.Color.Gray;
+            this.cuiTextBox1.ForeColor = System.Drawing.Color.Ivory;
             this.cuiTextBox1.Image = null;
             this.cuiTextBox1.ImageExpand = new System.Drawing.Point(0, 0);
             this.cuiTextBox1.ImageOffset = new System.Drawing.Point(0, 0);
@@ -63,6 +63,7 @@
             this.cuiTextBox1.TabIndex = 0;
             this.cuiTextBox1.TextOffset = new System.Drawing.Size(0, 0);
             this.cuiTextBox1.UnderlinedStyle = true;
+            this.cuiTextBox1.ContentChanged += new System.EventHandler(this.cuiTextBox1_ContentChanged);
             // 
             // cuiButton1
             // 
@@ -76,7 +77,7 @@
             this.cuiButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cuiButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.cuiButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.cuiButton1.ForeColor = System.Drawing.Color.Black;
+            this.cuiButton1.ForeColor = System.Drawing.Color.Ivory;
             this.cuiButton1.HoverBackground = System.Drawing.Color.White;
             this.cuiButton1.HoverForeColor = System.Drawing.Color.DimGray;
             this.cuiButton1.HoverImageTint = System.Drawing.Color.DimGray;
@@ -85,8 +86,8 @@
             this.cuiButton1.ImageExpand = new System.Drawing.Point(0, 0);
             this.cuiButton1.Location = new System.Drawing.Point(941, 45);
             this.cuiButton1.Name = "cuiButton1";
-            this.cuiButton1.NormalBackground = System.Drawing.Color.White;
-            this.cuiButton1.NormalForeColor = System.Drawing.Color.Black;
+            this.cuiButton1.NormalBackground = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(177)))), ((int)(((byte)(138)))));
+            this.cuiButton1.NormalForeColor = System.Drawing.Color.Ivory;
             this.cuiButton1.NormalImageTint = System.Drawing.Color.Black;
             this.cuiButton1.NormalOutline = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.cuiButton1.OutlineThickness = 1F;
@@ -134,6 +135,7 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(177)))), ((int)(((byte)(138)))));
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Location = new System.Drawing.Point(38, 113);
             this.richTextBox1.Name = "richTextBox1";
@@ -145,11 +147,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1227, 666);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(78)))), ((int)(((byte)(65)))));
+            this.ClientSize = new System.Drawing.Size(1126, 650);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.cuiChartLine1);
             this.Controls.Add(this.cuiButton1);
             this.Controls.Add(this.cuiTextBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
