@@ -46,6 +46,9 @@
     <Reference Include="Material3.WinForms, Version=0.11.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Material3.WinForms.0.11.0\lib\net472\Material3.WinForms.dll</HintPath>
     </Reference>
+    <Reference Include="SixLabors.ImageSharp, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d998eea7b14cab13, processorArchitecture=MSIL">
+      <HintPath>packages\SixLabors.ImageSharp.2.1.13\lib\net472\SixLabors.ImageSharp.dll</HintPath>
+    </Reference>
     <Reference Include="SunnyUI, Version=3.9.9.0, Culture=neutral, PublicKeyToken=3f4ebed4237db5e1, processorArchitecture=MSIL">
       <HintPath>packages\SunnyUI.3.9.9\lib\net472\SunnyUI.dll</HintPath>
     </Reference>
@@ -55,8 +58,24 @@
     <Reference Include="System">
       <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encoding.CodePages.5.0.0\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -69,11 +88,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\ConvertCommand.cs" />
+    <Compile Include="Core\AudioConverter.cs" />
     <Compile Include="Core\CommandExecutor.cs" />
     <Compile Include="Core\CommandParser.cs" />
     <Compile Include="Core\CommandSetup.cs" />
     <Compile Include="Commands\HelpCommand.cs" />
+    <Compile Include="Core\IFileConverter.cs" />
+    <Compile Include="Core\ImageConverter.cs" />
     <Compile Include="Core\Logger.cs" />
+    <Compile Include="Core\VideoConverter.cs" />
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>

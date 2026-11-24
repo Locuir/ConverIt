@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConverIt.Commands;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,7 @@ namespace ConverIt.Core
             CommandExecutor executor = new CommandExecutor();
 
             executor.RegisterCommand("help", new HelpCommand());
+            executor.RegisterCommand("convert", new ConvertCommand());
 
             return executor;
         }

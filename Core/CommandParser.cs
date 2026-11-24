@@ -79,33 +79,29 @@ namespace ConverIt
             return tokens;
         }
 
-        private void ParseTokens(List<string> tokens , ParsedCommand command)
+        private void ParseTokens(List<string> tokens, ParsedCommand command)
         {
-            for (int i = 0; i < tokens.Count; i++)
+            for (int i = 1; i < tokens.Count; i++)
             {
-
                 string token = tokens[i];
+
                 if (token.StartsWith("--"))
                 {
-                    string OptionName = token.Substring(2);
+                    string optionName = token.Substring(2);
 
-                    if (string.IsNullOrWhiteSpace(OptionName))
+                    if (string.IsNullOrWhiteSpace(optionName))
                     {
                         throw new ArgumentException("Option name cannot be empty.");
                     }
-                    
-                    if ( i + 1 < tokens.Count && !tokens[i + 1].StartsWith("--"))
+
+                    if (i + 1 < tokens.Count && !tokens[i + 1].StartsWith("--"))
                     {
-                        command.Options[OptionName] = tokens[++i];
-                       
+                        command.Options[optionName] = tokens[++i];
                     }
                     else
                     {
-                        command.Options[OptionName] = "true";
+                        command.Options[optionName] = "true";
                     }
-
-
-
                 }
                 else
                 {
