@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConverIt.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,6 @@ namespace ConverIt
     public interface ICommand
     {
 
-        void Execute(ParsedCommand parsedCommand);
+        void Execute(ParsedCommand parsedCommand , Logger logger);
     }
 }

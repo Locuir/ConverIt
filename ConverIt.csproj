@@ -71,6 +71,9 @@
   <ItemGroup>
     <Compile Include="Core\CommandExecutor.cs" />
     <Compile Include="Core\CommandParser.cs" />
+    <Compile Include="Core\CommandSetup.cs" />
+    <Compile Include="Commands\HelpCommand.cs" />
+    <Compile Include="Core\Logger.cs" />
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>

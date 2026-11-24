@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConverIt.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,7 +27,7 @@ namespace ConverIt
             Commands.Add(commandName, command);
         }
 
-        public void ExecuteCommand(ParsedCommand Command)
+        public void ExecuteCommand(ParsedCommand Command , Logger logger)
         {
             if (Command == null)
             {
@@ -36,7 +37,7 @@ namespace ConverIt
             {
                 throw new InvalidOperationException($"No command registered with the name '{Command.Name}'.");
             }
-            Commands[Command.Name].Execute(Command);
+            Commands[Command.Name].Execute(Command, logger);
         }
 
 
